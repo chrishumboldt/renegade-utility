@@ -5,5 +5,6 @@ src
 # Files to ignore
 .gitignore
 .prettierrc.yml
+bun.lockb
 publish.js
 tsconfig.json

@@ -5,7 +5,7 @@ const package = 'Renegade Utility'
 const commands = [
   `bun test`,
   `bun run build`,
-  // `npm publish --access public`,
+  `npm publish --access public`,
 ]
 
 console.log(`Publishing ${package} package`)
