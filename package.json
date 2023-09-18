@@ -1,16 +1,15 @@
 {
   "name": "@renegaderocks/utility",
-  "version": "1.0.3",
-  "module": "index.js",
-  "type": "module",
+  "version": "1.0.4",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
-    "build": "bun build ./src/index.ts --outdir ./ --minify",
+    "build": "bun run clean && ./node_modules/.bin/tsc",
+    "clean": "rm -rf ./dist",
     "publish": "bun publish.js"
   },
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "bun-types": "latest",
+    "typescript": "latest"
   }
 }
