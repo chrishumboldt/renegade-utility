@@ -1,11 +1,10 @@
 {
   "name": "@renegaderocks/utility",
   "version": "1.0.2",
-  "module": "dist/index.js",
+  "module": "index.js",
   "type": "module",
   "scripts": {
-    "build": "bun run clean && bun build ./src/index.ts --outdir ./dist --minify",
-    "clean": "rm -rf ./dist",
+    "build": "bun build ./src/index.ts --outdir ./ --minify",
     "publish": "bun publish.js"
   },
   "devDependencies": {
