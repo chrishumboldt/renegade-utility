@@ -1,5 +1,5 @@
 {
-  "name": "renegade-utility",
+  "name": "@renegaderocks/utility",
   "module": "dist/index.js",
   "type": "module",
   "scripts": {
