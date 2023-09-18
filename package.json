@@ -1,0 +1,15 @@
+{
+  "name": "renegade-utility",
+  "module": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "bun run clean && bun build ./src/index.ts --outdir ./dist --minify",
+    "clean": "rm -rf ./dist"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

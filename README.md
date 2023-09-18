@@ -1,2 +1,3 @@
-# renegade-utility
- A set of utility functions for the Renegade.
+# Renegade Utility
+
+A set of utility functions for the Renegade.
