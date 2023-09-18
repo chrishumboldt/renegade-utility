@@ -1,0 +1,9 @@
+# Folders to ignore
+node_modules
+src
+
+# Files to ignore
+.gitignore
+.prettierrc.yml
+publish.js
+tsconfig.json
