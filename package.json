@@ -1,9 +1,9 @@
 {
   "name": "@renegaderocks/utility",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "./dist/src/index.js",
   "scripts": {
-    "build": "bun run clean && ./node_modules/.bin/tsc",
+    "build": "bun run clean && bun build.js",
     "clean": "rm -rf ./dist",
     "publish": "bun publish.js"
   },
@@ -12,7 +12,10 @@
     "url": "https://github.com/chrishumboldt/renegade-utility"
   },
   "devDependencies": {
-    "bun-types": "latest",
+    "bun-plugin-dts": "latest",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
     "typescript": "latest"
   }
 }
