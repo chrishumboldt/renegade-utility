@@ -7,6 +7,10 @@
     "clean": "rm -rf ./dist",
     "publish": "bun publish.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrishumboldt/renegade-utility"
+  },
   "devDependencies": {
     "bun-types": "latest",
     "typescript": "latest"
