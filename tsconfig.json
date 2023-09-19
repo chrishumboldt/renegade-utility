@@ -8,13 +8,24 @@
     "moduleResolution": "nodenext",
     "outDir": "./dist",
     "paths": {
-      "@data": ["./src/data"],
-      "@module/*": ["./src/module/*"],
-      "@type": ["./src/type"]
+      "@data": [
+        "./src/data"
+      ],
+      "@module/*": [
+        "./src/module/*"
+      ],
+      "@type": [
+        "./src/type"
+      ]
     },
     "rootDir": "./",
     "strict": true,
     "target": "es2022",
-    "types": ["bun-types"]
-  }
+    "types": [
+      "bun-types"
+    ]
+  },
+  "exclude": [
+    "src/**/*.test.ts"
+  ]
 }
