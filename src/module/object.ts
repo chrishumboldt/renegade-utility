@@ -1,6 +1,6 @@
-import { isArray, isObject } from '@module/is'
-import { stringGetArrayPath } from '@module/string'
-import type { ObjectCreateFromKeyValue, ObjectUnset } from '@type'
+import type { ObjectCreateFromKeyValue, ObjectUnset } from '../type'
+import { isArray, isObject } from './is'
+import { stringGetArrayPath } from './string'
 
 export function objectClone(source: any): any {
   if (isArray(source)) {

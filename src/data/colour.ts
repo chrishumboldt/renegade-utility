@@ -1,4 +1,4 @@
-import type { ColourLogItem, ColourLogName } from '@type'
+import type { ColourLogItem, ColourLogName } from '../type'
 
 export const COLOUR: Record<string, string> = {
   BLACK: '#333',

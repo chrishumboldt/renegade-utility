@@ -1,5 +1,5 @@
-import { CHARACTER } from '@data'
-import type { StringGetArrayPath, StringRandomOptions } from '@type'
+import { CHARACTER } from '../data'
+import type { StringGetArrayPath, StringRandomOptions } from '../type'
 import { numberRandom } from './number'
 
 export function stringCamelCaseToDashCase(input: string) {

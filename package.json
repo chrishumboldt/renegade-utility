@@ -1,6 +1,6 @@
 {
   "name": "@renegaderocks/utility",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "./dist/src/index.js",
   "scripts": {
     "build": "bun run clean && ./node_modules/.bin/tsc",

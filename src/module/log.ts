@@ -1,5 +1,5 @@
-import { COLOUR_LOG } from '@data'
-import type { ColourLogName } from '@type'
+import { COLOUR_LOG } from '../data'
+import type { ColourLogName } from '../type'
 
 export function logColour(colour: ColourLogName, input: any) {
   return `\x1b${COLOUR_LOG.get(colour)?.start}${input}\x1b${
