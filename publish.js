@@ -7,6 +7,7 @@ const commands = [
   `bun run build`,
   `echo "Build complete!"`,
   `npm publish --access public`,
+  `echo "Publish complete!"`,
 ]
 
 console.log(`Publishing ${package} package`)
