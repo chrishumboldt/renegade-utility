@@ -1,9 +1,12 @@
-# Folders to ignore
+# Folders to ignore.
 node_modules
-src
 
-# Files to ignore
+# Files to ignore.
+.gitattributes
 .gitignore
+.npmingore
+.npmrc
+.nvmrc
 .prettierrc.yml
 bun.lockb
 publish.js
