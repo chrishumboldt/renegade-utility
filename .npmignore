@@ -9,6 +9,7 @@ src/
 .npmrc
 .nvmrc
 .prettierrc.yml
+build.js
 bun.lockb
 publish.js
 tsconfig.json
