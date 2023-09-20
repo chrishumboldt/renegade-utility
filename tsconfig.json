@@ -13,8 +13,5 @@
     "types": [
       "bun-types"
     ]
-  },
-  "exclude": [
-    "src/**/*.test.ts"
-  ]
+  }
 }

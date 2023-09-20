@@ -1,4 +1,5 @@
 export * from './colour'
+export * from './log'
 export * from './number'
 export * from './object'
 export * from './string'

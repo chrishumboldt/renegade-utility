@@ -1,20 +1,36 @@
 import { COLOUR_LOG } from '../data'
-import type { ColourLogName } from '../type'
+import type { ColourLogName, LogOutOption } from '../type'
 
-export function logColour(colour: ColourLogName, input: any) {
-  return `\x1b${COLOUR_LOG.get(colour)?.start}${input}\x1b${
-    COLOUR_LOG.get(colour)?.end
+export function logColour(prefixColour: ColourLogName, input: any) {
+  return `\x1b${COLOUR_LOG.get(prefixColour)?.start}${input}\x1b${
+    COLOUR_LOG.get(prefixColour)?.end
   }`
 }
 
-export function logOut(prefix = 'LOG', stringify = true) {
+export function logOut({
+  colour,
+  input,
+  prefix,
+  stringify,
+  wrap,
+}: LogOutOption) {
+  return logOutExecute(prefix, stringify, colour, wrap)(input)
+}
+
+export function logOutExecute(
+  prefix = 'LOG',
+  stringify = false,
+  colour: ColourLogName = 'magenta',
+  wrap = true,
+) {
   return (value: any) => {
+    const prefixFinal: string = wrap ? `[${prefix}]` : prefix
+
     console.log(
-      logColour('magenta', `[${prefix.toUpperCase()}]:`),
+      logColour(colour, `${prefixFinal.toUpperCase()}:`),
       stringify ? JSON.stringify(value) : value,
     )
 
     return value
   }
 }
-
